@@ -14,5 +14,7 @@ app.get('/weather', async (_, res) => {
 app.use(express.static('public'))
 
 app.listen(3000, () => {
-  console.log('Example app listening on port 3000!')
+  console.log(
+    'App listening on port 3000\n\u001b[1;34m➡ http://localhost:3000\u001b[0m'
+  )
 })
