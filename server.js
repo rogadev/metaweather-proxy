@@ -3,6 +3,7 @@ const e = require('express')
 const express = require('express')
 const app = express()
 const cors = require('cors')
+app.use(cors())
 
 /* Package Dependencies */
 const got = require('got')
