@@ -2,6 +2,7 @@
 const e = require('express')
 const express = require('express')
 const app = express()
+const cors = require('cors')
 
 /* Package Dependencies */
 const got = require('got')
@@ -12,7 +13,8 @@ app.use(express.static('public'))
 /* Route */
 app.get('/weather', async (req, res) => {
   const BASE_URL = 'https://www.metaweather.com/api/location'
-  const location = req.query.location.replace(' ', '+')
+  let location = req.query.location
+  if (location.includes(' ')) location = location.replace(' ', '+')
   let data
   let errors
   try {
