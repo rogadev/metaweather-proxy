@@ -13,9 +13,9 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.3",
-    "got": "^11.8.5"
+    "got": "^12.5.3"
   },
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.20"
   }
 }
